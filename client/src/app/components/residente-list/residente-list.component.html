@@ -1,0 +1,44 @@
+    
+    <table class="egt" border="0">
+        <caption>Buscar Residente</caption>
+        <tr>
+            <th>Codigo</th>
+            <th>Nombres</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>DNI</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="button" title="Buscar" value="Buscar Residente" ></td>
+    </table>
+<td></td>
+<div class="col-md-10">
+<div class="card text-left">
+    <table class="egt">
+        <tr>
+            <th>N°</th>
+            <th>Codigo</th>
+            <th>Nombres</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Numero de Dni</th>
+            <th>T_Residente</th>
+        </tr>
+        <tr *ngFor="let listaResidentes of listaResidentes">
+            <td>{{listaResidentes.residi_idresidente}}</td>
+            <td>{{listaResidentes.residv_codigo}}</td>
+            <td>{{listaResidentes.residv_nombres}}</td>
+            <td>{{listaResidentes.residv_apelpaterno}}</td>
+            <td>{{listaResidentes.residv_apelmaterno}}</td>
+            <td>{{listaResidentes.residv_dni}}</td>
+            <td>{{listaResidentes.residv_tiporeside}}</td>
+        </tr>
+    </table>
+</div>
+</div>
